@@ -1,6 +1,7 @@
 {
-  "Cantanti": [
-    {"nome": "RRARI_DAL_TACCO", "anni": 27, "canzone": "Tocco_pitocco" }
+  "Cantanti":[
+    {"nome": "RRARI_DAL_TACCO", "nazionalità": "italia", "nota_biografica": "siciliano" },
+    {"nome": "SHIVA", "nazionalità":"italia","nota_biografica": "milanese"}
   ]
 }
 

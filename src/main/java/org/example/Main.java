@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public void main(String[] args) {
+
     try (BufferedReader br = new BufferedReader(new FileReader("music.json"))) {
         String line;
         while ((line = br.readLine()) != null) {
@@ -12,4 +13,3 @@ public void main(String[] args) {
         System.out.println("errore nel leggere il file");
     }
 }
-
