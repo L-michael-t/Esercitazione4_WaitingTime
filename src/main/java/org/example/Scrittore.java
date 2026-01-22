@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class Scrittore {
 
-    public static void scriviJson(Cantante cantante) {
+    public void salvaSuFile(Cantante cantante) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(cantante);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("music.json"))) {
