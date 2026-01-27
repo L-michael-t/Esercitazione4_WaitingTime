@@ -10,9 +10,14 @@ public class Main{
 
 
 public static void main(String[] args) {
-    Cantante c1 = new Cantante("SHIVA","italia","milanese");
+    Cantante c1 = new Cantante("SHIVA","milanese","italiano");
     Scrittore s = new Scrittore();
+    Lettore l = new Lettore("music.json");
+
     s.salvaSuFile(c1);
+
+ Thread sc= new Thread(s);
+    Thread le= new Thread(l);
 
     try (BufferedReader br = new BufferedReader(new FileReader("music.json"))) {
         String line;

@@ -11,6 +11,7 @@ public class Lettore implements Runnable{
     }
     public void leggi(){
         FileReader fr;
+        extracted();
         int i;
         try {
 
@@ -23,6 +24,10 @@ public class Lettore implements Runnable{
         } catch (IOException ex) {
             System.err.println("Errore nella lettura");
         }
+    }
+
+    private static void extracted() {
+        int i;
     }
 
 
